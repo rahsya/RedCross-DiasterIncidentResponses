@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dispatch date:</b>
+  <%= @incident.dispatch_date %>
+</p>
+
+<p>
+  <b>Incident type:</b>
+  <%= @incident.incident_type %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @incident.address %>
+</p>
+
+<p>
+  <b>Response time:</b>
+  <%= @incident.response_time %>
+</p>
+
+<p>
+  <b>Amount of assistance:</b>
+  <%= @incident.amount_of_assistance %>
+</p>
+
+<p>
+  <b>Time to find responders:</b>
+  <%= @incident.time_to_find_responders %>
+</p>
+
+
+<%= link_to 'Edit', edit_incident_path(@incident) %> |
+<%= link_to 'Back', incidents_path %>

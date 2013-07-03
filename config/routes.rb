@@ -1,4 +1,7 @@
 RedCrossIncidents::Application.routes.draw do
+  resources :incidents
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

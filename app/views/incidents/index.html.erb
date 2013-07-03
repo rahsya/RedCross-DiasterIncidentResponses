@@ -1,0 +1,33 @@
+<h1>Listing incidents</h1>
+
+<table>
+  <tr>
+    <th>Dispatch date</th>
+    <th>Incident type</th>
+    <th>Address</th>
+    <th>Response time</th>
+    <th>Amount of assistance</th>
+    <th>Time to find responders</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @incidents.each do |incident| %>
+  <tr>
+    <td><%= incident.dispatch_date %></td>
+    <td><%= incident.incident_type %></td>
+    <td><%= incident.address %></td>
+    <td><%= incident.response_time %></td>
+    <td><%= incident.amount_of_assistance %></td>
+    <td><%= incident.time_to_find_responders %></td>
+    <td><%= link_to 'Show', incident %></td>
+    <td><%= link_to 'Edit', edit_incident_path(incident) %></td>
+    <td><%= link_to 'Destroy', incident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Incident', new_incident_path %>

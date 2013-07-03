@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dispatch_date: 2013-06-23
+  incident_type: MyString
+  address: MyString
+  response_time: 1
+  amount_of_assistance: 9.99
+  time_to_find_responders: 1
+
+two:
+  dispatch_date: 2013-06-23
+  incident_type: MyString
+  address: MyString
+  response_time: 1
+  amount_of_assistance: 9.99
+  time_to_find_responders: 1
