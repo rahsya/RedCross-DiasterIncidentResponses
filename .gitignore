@@ -16,3 +16,9 @@
 
 # Ignore vim .swp files
 *.swp
+
+# Ignore .rvmrc files
+*.rvmrc
+
+# Ignore Mac DS_Store files
+*.DS_Store
