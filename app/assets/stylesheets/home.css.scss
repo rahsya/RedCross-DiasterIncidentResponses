@@ -1,3 +1,86 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* make all images size themselves to their div & maintain aspect ratio */
+html { 
+  height: 100%; 
+}
+
+body{
+  text-align:center;
+  color:#666;
+  width:100%;
+  height:100%;
+  z-index:1;
+
+}
+
+
+
+.filters{
+  background-color:white;
+  width:20%;
+  padding:25px;
+  float:left;
+  list-style: none;
+  text-align:left;
+  z-index:50;
+  height:100%;
+  }
+
+
+  .nav {
+    color:#DDD;
+    font-size:12px;
+    background-color:#555;
+    padding:5px;
+    z-index:55;
+    margin:0;
+    box-shadow:0px 3px 3px #BBB;
+
+  }
+
+#googft-mapCanvas { 
+  height: 100%; 
+  z-index:1;
+}
+
+section {
+  position: relative;
+}
+
+#impact{
+  height: 100%;
+  width: 20%;
+  position:absolute;
+  left:0;
+  top:10%;
+  z-index:40;
+  background-color:rgba(0,0,0,0.8);
+  text-align:right;
+  padding:50px 20px 20px 70px
+}
+
+#impact:hover{
+  width: 80%;
+    left:20%;
+}
+
+table {
+    display:none;
+}
+
+#impact:hover > table {
+  display: table;
+}
+
+
+
+td {
+  padding: 30px;
+  width:200px;
+  color:white;
+  text-align:center;
+
+}
+
